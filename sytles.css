@@ -1,1 +1,51 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex; /* Use flexbox to center content on the page */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Make body take full viewport height */
+}
 
+main {
+    /* No specific main styling needed if body handles centering */
+    /* If you want a distinct content box, you can add padding, background, etc. here */
+}
+
+section h2 { /* General styling for the heading within the section */
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 1.5rem; /* Space below the heading */
+    text-align: center;
+}
+
+/* Interactive Text Demo */
+#interactive-text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* min-height is handled by body centering now */
+    padding: 2rem; /* Add some padding around the interactive area */
+    background: #fff; /* Optional: give the section a background */
+    box-shadow: 0 0 15px rgba(0,0,0,0.1); /* Optional: add a subtle shadow */
+    border-radius: 8px; /* Optional: round the corners */
+}
+
+.interactive-text {
+    font-size: 3.5rem; /* Make the text larger */
+    font-weight: bold;
+    cursor: default; 
+    display: inline-block; 
+}
+
+.interactive-text span {
+    display: inline-block; 
+    position: relative; 
+    padding: 0 2px; 
+    will-change: transform; /* Hint to the browser for optimization */
+}
